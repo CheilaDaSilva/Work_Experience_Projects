@@ -15,3 +15,26 @@ Completed practical task modules in:
 - Find who the marketing team should be targeting out of the new 1000 customer list as well as the broader market segment to reach out to. 
 - Performed an RFM analysis to segment current customers to find the high value customers.
 
+# Project Overview
+## Tasks Covered
+- Data Quality Assessment: Assessment of data quality and completeness in preparation for analysis.
+	- Skills: Data Quality Analysis; Analytical Dashboard Creation.
+- Data Insights: Targeting high value customers based on customer demographics and attributes.
+	- Skills: Data Analytics; Customer Segmentation; Data Driven Presentation.
+- Data Insights and Presentation: Using visualisations to present insights.
+	- Skills: Data Dashboards; Data Visualisation; Presentation.
+
+## The Client: Sprocket Central Pty Ltd
+Sprocket Central is a medium-size company/organisation that sells bicycles and accessories. The client is looking to expand into a new market and needs help with its customer and transaction data. 
+
+## Datasets
+The client has a large dataset relating to its customers but their team is unsure how to effectively analyse it to help optimise its marketing strategy.
+“the importance of optimising the quality of customer datasets cannot be underestimated. The better the quality of the dataset, the better chance you will be able to use it to drive company growth.”
+
+Client provided KPMG with 3 datasets: 
+- Customer Demographic; 
+- Customer Addresses; 
+- Transactions data in the past 3 months.
+
+## Project Goal
+We need to use our data analytics skills to recommend a suitable marketing strategy. 3 tasks will need to be completed over the course of this project.

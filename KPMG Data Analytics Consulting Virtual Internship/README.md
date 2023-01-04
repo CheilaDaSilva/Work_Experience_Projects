@@ -6,6 +6,8 @@ Completed practical task modules in: Data Quality Assessment; Data Insights; Dat
 
 View: [Virtual Internship Program](https://www.theforage.com/virtual-internships/theme/m7W4GMqeT3bh9Nb2c/KPMG-Data-Analytics-Virtual-Internship)
 
+![project git banner](https://user-images.githubusercontent.com/88495091/210605926-adc1d17a-5f54-4984-8370-38fd6cb83f70.png)
+
 # Project Overview
 ## Tasks Covered
 - Data Quality Assessment: Assessment of data quality and completeness in preparation for analysis.

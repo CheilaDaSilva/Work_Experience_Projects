@@ -50,18 +50,14 @@ View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experi
     <tr>
       <td align="center">Transactions</td>
       <td align="left">
-	    <ul>
-          <li>NULL values across various columns (online order; brand; product line; product class; product size; standard cost; product first sold date)</li>
-          <li>Customer IDs not in the customer demographics table</li>
+              <li>NULL values across various columns (online order; brand; product line; product class; product size; standard cost; product first sold date)</li>
+              <li>Customer IDs not in the customer demographics table</li>
 		    <li>Inconsistent formats: product_first_sold_date as a number instead of date</li>
-            </ul>
       </td>
       <td align="left">
-	     <ul>
-          <li>Transformed product_first_sold_date to DATE format;</li>
-          <li>Filtered out NULL values across all columns and  customers not present in the Customer Demographics table;</li>
-	  <li>Added extra column: profit (list_price - standard_cost).</li>
-            </ul>
+              <li>Transformed product_first_sold_date to DATE format;</li>
+              <li>Filtered out NULL values across all columns and  customers not present in the Customer Demographics table;</li>
+	      <li>Added extra column: profit (list_price - standard_cost).</li>
       </td>
     </tr>
     <tr>

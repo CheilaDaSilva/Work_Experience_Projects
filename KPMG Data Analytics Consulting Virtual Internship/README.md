@@ -37,20 +37,42 @@ We need to use our data analytics skills to recommend a suitable marketing strat
 To achieve this I performed an RFM analysis to segment the customers and find the high value customers.
 
 
-# Task 1 - Data Quality Assessment
+# Task 1 - Data Quality Assessment and Actions taken
 
-| Table  | Transformations and Filters performed |
-| ------------- | ------------- |
-| Transactions  | - Transformed product_first_sold_date to DATE format; 
-- Filtered out NULL values across all columns and  customers not present in the Customer Demographics table; 
-- Added extra column: profit (list_price - standard_cost).  |
-| Customer Demographic  | - Fixed Gender column categorical labels; 
-- Transformed DOB to DATE format; 
-- Set NULL job_titles to n/a, matching the job_title_category label for null values; 
-- Removed inaccurate date of births; Removed the ‘default’ column; 
-- Filtered out NULL values across all columns, deceased customers and customers with no Address information; 
-- Added extra columns: age and age_group.  |
-| Customer Address | - Fixed State column categorical labels; 
-- Filtered out customers not present in the Customer Demographics table.  |
+-<table>
+  <tbody>
+    <tr>
+      <th>Tables</th>
+      <th align="center">Issues Found</th>
+      <th align="right">Mitigation/Action</th>
+    </tr>
+    <tr>
+      <td>Transactions</td>
+      <td align="center">right-aligned</td>
+      <td align="right">$1600</td>
+    </tr>
+    <tr>
+      <td>Customer Demographics</td>
+      <td align="center">centered</td>
+      <td align="right">$12</td>
+    </tr>
+    <tr>
+      <td>Customer Address</td>
+      <td align="center">are neat</td>
+      <td align="right">$1</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+        </ul>
+      </td>
+      <td align="center">See the list</td>
+      <td align="right">from the first column</td>
+    </tr>
+  </tbody>
+</table>
+
 
 

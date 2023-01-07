@@ -12,13 +12,10 @@ View: [Virtual Internship Program](https://www.theforage.com/virtual-internships
 ## Tasks Covered
 - Data Quality Assessment: Assessment of data quality and completeness in preparation for analysis.
 	- Skills: Data Quality Analysis; Analytical Dashboard Creation.
-	- Goal: Take a look at the datasets provided by Sprocket Central Pty Ltd and identify all data quality issues. Draft an email to the client identifying all data quality issues. 
 - Data Insights: Targeting high value customers based on customer demographics and attributes.
 	- Skills: Data Analytics; Customer Segmentation; Data Driven Presentation.
-	- Goal: Create a PowerPoint presentation outlining the approach we will be taking to identify which of the 1000 customers Sprocket Central Pty Ltd should target, based on the datasets provided. Explain the three phases:  Data Exploration; Model Development and Interpretation.
 - Data Insights and Presentation: Using visualisations to present insights.
 	- Skills: Data Dashboards; Data Visualisation; Presentation.
-	- Goal: Develop a dashboard that to present to the client at the next meeting. Display your data summary and results of the analysis in a dashboard. The presentation should specify who Sprocket Central Pty Ltd' should be targeting out of the new 1000 customer list.
 
 ## The Client: Sprocket Central Pty Ltd
 Sprocket Central is a medium-size company/organisation that sells bicycles and accessories. The client is looking to expand into a new market and needs help with its customer and transaction data. 
@@ -40,7 +37,8 @@ To achieve this I performed an RFM analysis to segment the customers and find th
 # Task 1 - Data Quality Assessment and Actions taken
 
 Overview of the results of the data quality assessment and the actions done to each dataset.
-View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql) - includes creation of new fields and joint of all three datasets
+
+View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql) - includes creation of new fields and SQL join query of all three datasets
 
 <table>
   <tbody>

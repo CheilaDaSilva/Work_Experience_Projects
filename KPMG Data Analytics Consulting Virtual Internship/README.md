@@ -41,8 +41,16 @@ To achieve this I performed an RFM analysis to segment the customers and find th
 
 | Table  | Transformations and Filters performed |
 | ------------- | ------------- |
-| Transactions  | CTransformed product_first_sold_date to DATE format; Filtered out NULL values across all columns and  customers not present in the Customer Demographics table; Added extra column: profit (list_price - standard_cost).  |
-| Customer Demographic  | Fixed Gender column categorical labels; Transformed DOB to DATE format; Set NULL job_titles to n/a, matching the job_title_category label for null values; Removed inaccurate date of births; Removed the ‘default’ column; Filtered out NULL values across all columns, deceased customers and customers with no Address information; Added extra columns: age and age_group.  |
-| Customer Address | Fixed State column categorical labels; Filtered out customers not present in the Customer Demographics table.  |
+| Transactions  | - Transformed product_first_sold_date to DATE format; 
+- Filtered out NULL values across all columns and  customers not present in the Customer Demographics table; 
+- Added extra column: profit (list_price - standard_cost).  |
+| Customer Demographic  | - Fixed Gender column categorical labels; 
+- Transformed DOB to DATE format; 
+- Set NULL job_titles to n/a, matching the job_title_category label for null values; 
+- Removed inaccurate date of births; Removed the ‘default’ column; 
+- Filtered out NULL values across all columns, deceased customers and customers with no Address information; 
+- Added extra columns: age and age_group.  |
+| Customer Address | - Fixed State column categorical labels; 
+- Filtered out customers not present in the Customer Demographics table.  |
 
 

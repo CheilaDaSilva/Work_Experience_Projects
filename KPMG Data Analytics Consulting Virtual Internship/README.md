@@ -48,7 +48,12 @@ To achieve this I performed an RFM analysis to segment the customers and find th
     </tr>
     <tr>
       <td>Transactions</td>
-      <td align="center">right-aligned</td>
+      <td align="center">
+	    <ul>
+          <li>item1</li>
+          <li>item2</li>
+            </ul>
+      </td>
       <td align="right">$1600</td>
     </tr>
     <tr>

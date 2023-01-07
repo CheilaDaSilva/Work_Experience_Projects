@@ -39,7 +39,9 @@ To achieve this I performed an RFM analysis to segment the customers and find th
 
 # Task 1 - Data Quality Assessment and Actions taken
 
--<table>
+Overview of the results of the data quality assessment and the actions done to each dataset (as shown in [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql)
+
+<table>
   <tbody>
     <tr>
       <th align="center">Tables</th>

@@ -189,10 +189,12 @@ Columns with NULL values: 'last name'; 'DOB'; 'job title'; tenure
 -- For'job title' - substitute NULL values by 'n/a'; same notation was already being used in the 'job industry' field
 
 -- update field
+
 UPDATE KPMGData..CustomerDemographic 
 SET job_title = 'n/a' WHERE job_title IS NULL
 
 -- view job titles
+
 SELECT DISTINCT(job_title) FROM KPMGData..CustomerDemographic 
 
 
@@ -209,7 +211,7 @@ having COUNT(customer_id) > 1
 -- there are 2 first_names (with no last_name) that have duplicates so it could affect segmentation
 -- for completeness, customers with missing last_names will be filtered out
 
--- Looking at customers with not date of birth details
+-- Looking at customers with no date of birth details
 
 SELECT COUNT(customer_id) FROM KPMGData..CustomerDemographic
 WHERE DOB IS NULL
@@ -219,10 +221,10 @@ WHERE DOB IS NULL
 
 SELECT * FROM KPMGData..CustomerDemographic
 WHERE tenure IS NULL
--- tenure is null when DOB is also null so it will be filtered out along null DOBs
+-- tenure is null when DOB is also null so it will be filtered out along with the null DOBs
 
 
--- Filtering out all NULL values from table
+-- Filtering out all NULL values from Customer Demographics
 SELECT * FROM KPMGData..CustomerDemographic
 WHERE last_name IS NOT NULL AND DOB IS NOT NULL
  
@@ -256,7 +258,7 @@ WHERE online_order IS NULL
 -- 1.80% of total records - filter out for completeness 
 
 
--- Filtering out all NULL values from table
+-- Filtering out all NULL values from the Transactions table
 SELECT * FROM KPMGData..Transactions
 WHERE brand IS NOT NULL AND online_order IS NOT NULL
 
@@ -277,6 +279,8 @@ AND deceased_indicator = 'N'
 
 SELECT * FROM KPMGData..CustomerAddress
 WHERE customer_id BETWEEN 1 AND 4000
+
+
 
 
 /* customers 1 to 4,000 with no address information */

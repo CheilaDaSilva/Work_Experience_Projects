@@ -50,31 +50,47 @@ To achieve this I performed an RFM analysis to segment the customers and find th
       <td>Transactions</td>
       <td align="center">
 	    <ul>
-          <li>item1</li>
-          <li>item2</li>
+          <li>NULL values across various columns (online order; brand; product line; product class; product size; standard cost; product first sold date)</li>
+          <li>Customer IDs not in the customer demographics table</li>
+		    <li>Inconsistent formats: product_first_sold_date as a number instead of date</li>
             </ul>
       </td>
-      <td align="right">$1600</td>
+      <td align="right">
+	     <ul>
+          <li>Transformed product_first_sold_date to DATE format;</li>
+          <li>Filtered out NULL values across all columns and  customers not present in the Customer Demographics table;</li>
+	  <li>Added extra column: profit (list_price - standard_cost).</li>
+            </ul>
+      </td>
     </tr>
     <tr>
       <td>Customer Demographics</td>
-      <td align="center">centered</td>
-      <td align="right">$12</td>
+      <td align="center">
+	      <li>DOB with year 1843 found</li>
+	      <li>NULL values across various columns (last name; DOB; job title) and duplicated first names where last_name is NULL which could affect segmentation of data </li>
+	      <li>'default' column provides no information</li>
+	      <li> Inconsistent categorical labels in the gender column</li>
+      </td>
+      <td align="right">
+	      <li>Fixed Gender column categorical labels;</li>
+	      <li>Transformed DOB to DATE format;</li>
+	      <li>Set NULL job_titles to n/a, matching the job_title_category label for null values;</li>
+	      <li>Removed inaccurate date of births;</li>
+	      <li>Removed the ‘default’ column;</li>
+	      <li>Filtered out NULL values across all columns, deceased customers and customers with no Address information;</li>
+	      <li>Added extra columns: age and age_group.</li>  
+      </td>
     </tr>
     <tr>
       <td>Customer Address</td>
-      <td align="center">are neat</td>
-      <td align="right">$1</td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-        </ul>
+     <td align="center">
+	     <li>Additional customer ids not present in the customer demographics table, as well as missing information for some of the exisiting ids</li>
+	     <li>Inconsistent categorical labels in the state column</li>
+     </td>
+      <td align="right">
+	 <li>Fixed State column categorical labels</li>    
+	      <li>Filtered out customers not present in the customer demographics table</li>
       </td>
-      <td align="center">See the list</td>
-      <td align="right">from the first column</td>
     </tr>
   </tbody>
 </table>

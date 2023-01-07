@@ -42,13 +42,13 @@ To achieve this I performed an RFM analysis to segment the customers and find th
 -<table>
   <tbody>
     <tr>
-      <th>Tables</th>
+      <th align="center">Tables</th>
       <th align="center">Issues Found</th>
-      <th align="right">Mitigation/Action</th>
+      <th align="center">Mitigation/Action</th>
     </tr>
     <tr>
       <td>Transactions</td>
-      <td align="center">
+      <td align="right">
 	    <ul>
           <li>NULL values across various columns (online order; brand; product line; product class; product size; standard cost; product first sold date)</li>
           <li>Customer IDs not in the customer demographics table</li>
@@ -65,7 +65,7 @@ To achieve this I performed an RFM analysis to segment the customers and find th
     </tr>
     <tr>
       <td>Customer Demographics</td>
-      <td align="center">
+      <td align="right">
 	      <li>DOB with year 1843 found</li>
 	      <li>NULL values across various columns (last name; DOB; job title) and duplicated first names where last_name is NULL which could affect segmentation of data </li>
 	      <li>'default' column provides no information</li>
@@ -83,7 +83,7 @@ To achieve this I performed an RFM analysis to segment the customers and find th
     </tr>
     <tr>
       <td>Customer Address</td>
-     <td align="center">
+     <td align="right">
 	     <li>Additional customer ids not present in the customer demographics table, as well as missing information for some of the exisiting ids</li>
 	     <li>Inconsistent categorical labels in the state column</li>
      </td>

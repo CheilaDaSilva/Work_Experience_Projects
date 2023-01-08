@@ -57,7 +57,6 @@ View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experi
       <td align="left">
               <li>Transformed product_first_sold_date to DATE format;</li>
               <li>Filtered out NULL values across all columns and  customers not present in the Customer Demographics table;</li>
-	      <li>Added extra column: profit (list_price - standard_cost).</li>
       </td>
     </tr>
     <tr>
@@ -75,7 +74,6 @@ View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experi
 	      <li>Removed inaccurate date of births;</li>
 	      <li>Removed the ‘default’ column;</li>
 	      <li>Filtered out NULL values across all columns, deceased customers and customers with no Address information;</li>
-	      <li>Added extra columns: age and age_group.</li>  
       </td>
     </tr>
     <tr>

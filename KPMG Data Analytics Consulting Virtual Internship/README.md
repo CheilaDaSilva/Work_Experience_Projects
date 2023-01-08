@@ -38,7 +38,7 @@ To achieve this I performed an RFM analysis to segment the customers and find th
 
 Overview of the results of the data quality assessment and the actions done to each dataset.
 
-View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql) - includes creation of new fields and SQL join query of all three datasets
+View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql)
 
 <table>
   <tbody>

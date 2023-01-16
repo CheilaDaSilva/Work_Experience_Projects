@@ -1,6 +1,8 @@
-/* create database and import datasets */
+/* create database */
 
 CREATE DATABASE KPMGData
+
+/* import datasets - see repository folder "datasets" */
 
 
 
@@ -11,6 +13,9 @@ SELECT * FROM KPMGData..Transactions
 SELECT * FROM KPMGData..CustomerDemographic
 
 SELECT * FROM KPMGData..CustomerAddress
+
+SELECT * FROM KPMGData..NewCustomerList
+-- list of 1,000 new customers
 
 
 
@@ -98,6 +103,16 @@ ORDER BY transaction_id
 
 ALTER TABLE KPMGData..Transactions
 ALTER COLUMN list_price MONEY
+
+
+/* format 'transaction date' from DATETIME to DATE */
+
+-- view data
+SELECT DISTINCT(transaction_date) FROM KPMGData..Transactions
+
+-- transform data
+ALTER TABLE KPMGData..Transactions
+ALTER COLUMN transaction_date DATE
 
 
 
@@ -189,13 +204,16 @@ Columns with NULL values: 'last name'; 'DOB'; 'job title'; tenure
 -- For'job title' - substitute NULL values by 'n/a'; same notation was already being used in the 'job industry' field
 
 -- update field
-
 UPDATE KPMGData..CustomerDemographic 
 SET job_title = 'n/a' WHERE job_title IS NULL
 
 -- view job titles
-
 SELECT DISTINCT(job_title) FROM KPMGData..CustomerDemographic 
+
+
+/* Updating null values of job_title to 'n/a' in NewCustomerList */
+UPDATE KPMGData..NewCustomerList
+SET job_title = 'n/a' WHERE job_title IS NULL
 
 
 -- Looking at customers with no last_name
@@ -211,7 +229,7 @@ having COUNT(customer_id) > 1
 -- there are 2 first_names (with no last_name) that have duplicates so it could affect segmentation
 -- for completeness, customers with missing last_names will be filtered out
 
--- Looking at customers with no date of birth details
+-- Looking at customers with not date of birth details
 
 SELECT COUNT(customer_id) FROM KPMGData..CustomerDemographic
 WHERE DOB IS NULL
@@ -221,10 +239,10 @@ WHERE DOB IS NULL
 
 SELECT * FROM KPMGData..CustomerDemographic
 WHERE tenure IS NULL
--- tenure is null when DOB is also null so it will be filtered out along with the null DOBs
+-- tenure is null when DOB is also null so it will be filtered out along null DOBs
 
 
--- Filtering out all NULL values from Customer Demographics
+-- Filtering out all NULL values from table
 SELECT * FROM KPMGData..CustomerDemographic
 WHERE last_name IS NOT NULL AND DOB IS NOT NULL
  
@@ -258,42 +276,14 @@ WHERE online_order IS NULL
 -- 1.80% of total records - filter out for completeness 
 
 
--- Filtering out all NULL values from the Transactions table
+-- Filtering out all NULL values from table
 SELECT * FROM KPMGData..Transactions
 WHERE brand IS NOT NULL AND online_order IS NOT NULL
 
 
 
 
-/* Filtered datasets with only customer 1-4,000 for consistency */
-
-
-SELECT * FROM KPMGData..Transactions
-WHERE brand IS NOT NULL AND online_order IS NOT NULL
-AND customer_id BETWEEN 1 AND 4000
-
-SELECT * FROM KPMGData..CustomerDemographic
-WHERE last_name IS NOT NULL AND DOB IS NOT NULL
-AND deceased_indicator = 'N'
--- already contains only customers 1 to 4,000 and removed deceased customers
-
-SELECT * FROM KPMGData..CustomerAddress
-WHERE customer_id BETWEEN 1 AND 4000
-
-
-
-
-/* customers 1 to 4,000 with no address information */
-
-SELECT * FROM KPMGData..CustomerDemographic
-WHERE customer_id NOT IN
-(SELECT distinct(customer_id) FROM KPMGData..CustomerAddress)
--- when joining tables we will filter these out by removing NULL addresses
-
-
-
-
-/* COMPLETE AND FILTERED DATASETS TO USE FOR DATA EXPLORATION STAGES */
+/* COMPLETE AND FILTERED DATASETS FOR DATA EXPLORATION */
 
 
 
@@ -314,21 +304,6 @@ AND deceased_indicator = 'N'
 
 SELECT * FROM KPMGData..CustomerAddress
 WHERE customer_id BETWEEN 1 AND 4000
-
-
-
-
-/* 
-note
-there are some customers 1 to 4,000 with no address information 
-when joining tables we will filter these out by removing NULL addressed from the joint table
-*/
-
--- Customers with no address information
-SELECT * FROM KPMGData..CustomerDemographic
-WHERE customer_id NOT IN
-(SELECT distinct(customer_id) FROM KPMGData..CustomerAddress)
-
 
 
 

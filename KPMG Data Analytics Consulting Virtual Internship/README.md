@@ -91,4 +91,22 @@ View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experi
 </table>
 
 
+# Task 2 & 3 - Data Insights and Presentation
 
+Overview of the data exploration done to find the broader markets for the client to target, as well as the use of RFM analysis for the purpose o segmentinng customers and finding high value customers amongst the current customers. 
+
+## Data Exploration and Visualisation
+
+- Used Power BI to explore age, job and wealth segment distributions (amongt others) within current customers who have transaction history to understand who is buying the product and which broader markets are generating the most profit i.e. which are the broader markets to target.
+- Compared current customers demographic distributions against new customers demographics to understand which customers of the new customer list to target based on market they belong to.
+
+## Customer Segmentation through RFM Analysis
+
+- Calculated Recency, Frequency and Monetary scores for current customers to obtain overall RFM value in order to segment customers and the high target customers.
+
+
+
+
+Next steps:
+
+- Using the insights obtained till now to find who from the 1000 new customers are potential high target customers.

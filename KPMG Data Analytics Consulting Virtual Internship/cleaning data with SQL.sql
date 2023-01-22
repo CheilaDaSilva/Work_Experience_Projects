@@ -98,11 +98,12 @@ ORDER BY transaction_id
 
 
 
-
+/****** extra *******/
 /* format 'list_price' to have 'money' like the 'standard_cost' field */
 
 ALTER TABLE KPMGData..Transactions
 ALTER COLUMN list_price MONEY
+/*********************?
 
 
 /* format 'transaction date' from DATETIME to DATE */
@@ -165,18 +166,21 @@ ALTER COLUMN DOB DATE
 
 SELECT DISTINCT(gender) FROM KPMGData..CustomerDemographic
 
--- update values (keep F, M and U)
+-- update values (keep Female, Male and U)
 
 UPDATE KPMGData..CustomerDemographic
-SET gender = 'F' WHERE gender = 'Female' OR gender = 'Femal'
+SET gender = 'Female' WHERE gender = 'F' OR gender = 'Femal'
 
 UPDATE KPMGData..CustomerDemographic
-SET gender = 'M' WHERE gender = 'Male'
+SET gender = 'Male' WHERE gender = 'M'
+
 
 
 /* remove unecessary 'default' column - it provides no information about customers */
 
 ALTER TABLE KPMGData..CustomerDemographic DROP COLUMN [default]
+
+
 
 /* detect deceased customers */
 
@@ -229,11 +233,13 @@ having COUNT(customer_id) > 1
 -- there are 2 first_names (with no last_name) that have duplicates so it could affect segmentation
 -- for completeness, customers with missing last_names will be filtered out
 
+
 -- Looking at customers with not date of birth details
 
 SELECT COUNT(customer_id) FROM KPMGData..CustomerDemographic
 WHERE DOB IS NULL
 -- 88 records with no date of birth - filter out for completeness
+
 
 -- Looking at customers with no 'tenure' field values
 

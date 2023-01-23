@@ -1,5 +1,4 @@
-#💻📊 Projects
-Projects done as part of virtual internships with the goal of simulating real-life work problems
+# 💻📊 Projects
 ![banner](https://user-images.githubusercontent.com/88495091/214111956-a63c8b3f-de7c-4218-bbe1-d4771bd7981a.PNG)
 
 Projects done as part of virtual internships with the goal of simulating real-life work problems

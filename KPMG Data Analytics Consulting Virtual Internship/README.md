@@ -129,10 +129,6 @@ Transaction Dashboard Snip
 
 
 Current Customers Demographics and Attributes Dashboard Snip
-<figure>
-  <img src="https://user-images.githubusercontent.com/88495091/216713658-35076d33-a2a1-48be-80e6-4cfa5f65a931.png" alt="Transaction Dashboard" style="width:100%">
-  <figcaption>Transaction Dashboard</figcaption>
-</figure>
 ![current customers dashboard](https://user-images.githubusercontent.com/88495091/216713658-35076d33-a2a1-48be-80e6-4cfa5f65a931.png)
 
 

@@ -1,13 +1,8 @@
 # 💻 KPMG Data Consulting Virtual Internship with Forage
 
-Virtual Experience Program Participant
-
-Completed practical task modules in: Data Quality Assessment; Data Insights; Data Insights and Presentation	
-
-View: [Virtual Internship Program](https://www.theforage.com/virtual-internships/theme/m7W4GMqeT3bh9Nb2c/KPMG-Data-Analytics-Virtual-Internship)
-
 ![banner](https://user-images.githubusercontent.com/88495091/215600105-cc565ceb-4545-4620-9e13-6c208497a18e.png)
 
+Virtual Experience Program Participant | [Program Details](https://www.theforage.com/virtual-internships/theme/m7W4GMqeT3bh9Nb2c/KPMG-Data-Analytics-Virtual-Internship) | [Certificate](https://insidesherpa.s3.amazonaws.com/completion-certificates/KPMG/m7W4GMqeT3bh9Nb2c_KPMG_pHMgyJ6PB3ENxLgKb_completion_certificate.pdf)
 
 # Project Overview
 ## Tasks Covered
@@ -23,23 +18,37 @@ Sprocket Central is a medium-size company/organisation that sells bicycles and a
 
 ## Datasets
 The client has a large dataset relating to its customers but their team is unsure how to effectively analyse it to help optimise its marketing strategy.
-“the importance of optimising the quality of customer datasets cannot be underestimated. The better the quality of the dataset, the better chance you will be able to use it to drive company growth.”
 
-Client provided KPMG with 3 datasets: 
+“The importance of optimising the quality of customer datasets cannot be underestimated. The better the quality of the dataset, the better chance you will be able to use it to drive company growth.”
+
+Client provided KPMG with 3 datasets regarding their current customers and transaction history of the year 2017:
 - Customer Demographic; 
 - Customer Addresses; 
-- Transactions data in the past 3 months.
+- Transactions data.
 
-## Project Goal
-We need to use our data analytics skills to recommend a suitable marketing strategy and find who the marketing team should be targeting out of the new 1000 customer list as well as the broader market segment to reach out to.
-To achieve this I performed an RFM analysis to segment the customers and find the high value customers.
+An additional dataset was provided with a list of 1000 new customers:
+- New Customer List
 
+## Project Goals
+
+The purpose of the project is to:
+- Analyse the client's existing customers and transaction history to determine customer trends and behaviours.
+- Specify who Spocket Central's marketing team should be targeting out of the new 1000 customer list as well as the broader market segment to reach out to.
+
+## Project Approach and Results
+
+The [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15) presentation details the approach taken to achieve the project goals as well as the presentation of results and its interpretation. Below is a snip of this presentation with the overall steps taken:
+
+![snip from presentation](https://user-images.githubusercontent.com/88495091/216684629-cec66dd6-1ed7-4679-80ff-ece185cbe030.png)
 
 # Task 1 - Data Quality Assessment and Actions taken
 
-Overview of the results of the data quality assessment and the actions done to each dataset.
+Overview of the steps taken to analyse the quality of the datasets and transformation that have been done to the datasets as a result.
 
-View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql)
+Steps:
+- Conducted a quality assessment of the datasets based on the Standard Data Quality Dimensions Framework (checked Accuracy, Completeness, Consistency, Currency, Relevancy, Validity and Uniqueness)
+- [Cleaned Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql): Data was transformed; inconsistent formats and categorical labels were fixed.
+- Recommended mitigation methods and implement it to create a training dataset for data exploration and model development.
 
 <table>
   <tbody>
@@ -94,20 +103,38 @@ View code: [Cleaning Data With SQL](https://github.com/CheilaDaSilva/Work_Experi
 
 # Task 2 & 3 - Data Insights and Presentation
 
-Overview of the data exploration done to find the broader markets for the client to target, as well as the use of RFM analysis for the purpose o segmentinng customers and finding high value customers amongst the current customers. 
+Overview of the data exploration done to find the broader markets for the client to target, as well as the use of RFM analysis for the purpose of segmenting customers and finding the high value customers amongst the current customers dataset. 
 
 ## Data Exploration and Visualisation
 
-- Used Power BI to explore age, job and wealth segment distributions (amongt others) within current customers who have transaction history to understand who is buying the product and which broader markets are generating the most profit i.e. which are the broader markets to target.
-- Compared current customers demographic distributions against new customers demographics to understand which customers of the new customer list to target based on market they belong to.
+Steps:
+- Feature Construction: [Created additional fields](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/2.%20Adding%20Extra%20Fields.sql) to obtain insights, such as a customer's age group and profit generated from a transaction, to further investigate customer behaviour and trends.
+- Created [tables for data exploration stages](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/3.%20tables%20for%20PBI%20dashboard.sql) with the quality assessment and mitigation methods suggested taken into consideration.
+- Built Power BI dashboards to explore age, job and wealth segment distributions (amongt others) within current customers who have transaction history to understand who is buying the product and which broader markets are generating the most profit i.e. which are the broader markets to target.
+- Compared current customers demographic distributions against new customers demographics to understand which broader markets to target.
+
+#### Power BI Dashboard snips
+
+![image](https://user-images.githubusercontent.com/88495091/216690572-ee675d95-fb80-4597-adb0-8a97f9664764.png)
+![image](https://user-images.githubusercontent.com/88495091/216690246-02ec62dd-a8e3-423d-8505-6c043f8c6f97.png)
+![image](https://user-images.githubusercontent.com/88495091/216690325-86a814f9-ca26-4455-beae-c3cde122a486.png)
+
+#### Data Exploration Insights
+
+Details in the [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15) presentation.
+
+The following insights were obtained from comparing various distributions between new and current customers:
+- Current customers have higher percentages of customers in their 30s and 40s, and lower percentages of customers in other age groups as age increases and decreases. New customers have more spread out age groups amongst their customers, therefore having higher percentages of both newer and older customers.
+- Both new and current customers have more customers in their 40s compared to other age groups.
+- About 50% of the new and current customers reside in New South Wales, Australia.
+- The top 3 industried that customers in both groups belong to are: Manufacturing, Financial Services and Health.
+- About 50% of new and current customers have been assigned the "Mass Customer" wealth segment; Other wealth segments, "High Newtwork" and "Affluent Customers", contain about 25% of customers.
+- Both new and current customers have a higher percentage of customers with a property evaluation score between 7 and 10.
 
 ## Customer Segmentation through RFM Analysis
 
 - Calculated Recency, Frequency and Monetary scores for current customers to obtain overall RFM value in order to segment customers and the high target customers.
 
-
-
-
-Next steps:
+## Next steps:
 
 - Using the insights obtained till now to find who from the 1000 new customers are potential high target customers.

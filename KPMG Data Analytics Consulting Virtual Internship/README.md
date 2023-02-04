@@ -154,11 +154,11 @@ Similarities between new and current customers distributions:
 
 From initial data exploration of customer attributes and demographics, most of current customers with transaction history in 2017 tend to belong to the following markets:
 
-Wealth Segment = Mass Customer;
-Gender = Female;
-Age Group = 30s to 40s;
-Job Industry = Manufacturing, Financial Services and Health.
-Property Evaluation = Scores 7 to 10
+- Wealth Segment = Mass Customer;
+- Gender = Female;
+- Age Group = 30s to 40s;
+- Job Industry = Manufacturing, Financial Services and Health.
+- Property Evaluation = Scores 7 to 10
 
 Based on the transaction dashboard these groups are also the ones who tend to buy the most and spend the most hence I recommend the marketing team to target these broader market segments.
 

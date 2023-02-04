@@ -162,8 +162,6 @@ From initial data exploration of customer attributes and demographics, most of c
 
 Based on the transaction dashboard these groups are also the ones who tend to buy the most and spend the most hence I recommend the marketing team to target these broader market segments.
 
-Seeing as new and current customers have similar distribution, high value customers from the new customer list will also belong to these markets.
-
 
 ## Customer Segmentation through RFM Analysis
 

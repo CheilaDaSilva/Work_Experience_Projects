@@ -37,7 +37,7 @@ The purpose of the project is to:
 
 ## Project Approach and Results
 
-The [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15) presentation details the approach taken to achieve the project goals as well as the presentation of results and its interpretation. Below is a snip of this presentation with the overall steps taken:
+The [Data Analytics Approach](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FCheilaDaSilva%2FWork_Experience_Projects%2Fmain%2FKPMG%2520Data%2520Analytics%2520Consulting%2520Virtual%2520Internship%2FData%2520Analytics%2520Approach.pptx&wdOrigin=BROWSELINK) presentation details the approach taken to achieve the project goals as well as the presentation of results and its interpretation. Below is a snip of this presentation with the overall steps taken:
 
 ![snip from presentation](https://user-images.githubusercontent.com/88495091/216684629-cec66dd6-1ed7-4679-80ff-ece185cbe030.png)
 
@@ -105,14 +105,14 @@ Steps:
 
 Overview of the data exploration done to find the broader markets for the client to target, as well as the use of RFM analysis for the purpose of segmenting customers and finding the high value customers amongst the current customers dataset. 
 
-More details in the [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15) presentation.
+More details in the [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FCheilaDaSilva%2FWork_Experience_Projects%2Fmain%2FKPMG%2520Data%2520Analytics%2520Consulting%2520Virtual%2520Internship%2FData%2520Analytics%2520Approach.pptx&wdOrigin=BROWSELINK) presentation.
 
 ## Data Exploration and Visualisation
 
 Steps:
 - Feature Construction: [Created additional fields](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/2.%20Adding%20Extra%20Fields.sql) to obtain insights, such as a customer's age group and profit generated from a transaction, to further investigate customer behaviour and trends.
 - Created [tables for data exploration stages](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/3.%20tables%20for%20PBI%20dashboard.sql) with the quality assessment and mitigation methods suggested taken into consideration.
-- Built Power BI dashboards to explore age, job and wealth segment distributions (amongt others) within current customers who have transaction history to understand who is buying the product and which broader markets are generating the most profit i.e. which are the broader markets to target.
+- Built [Power BI dashboards](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/KPMG%20Power%20Bi%20data%20exploration.pbix) to explore age, job and wealth segment distributions (amongt others) within current customers who have transaction history to understand who is buying the product and which broader markets are generating the most profit i.e. which are the broader markets to target.
 - Compared current customers demographic distributions against new customers demographics to understand which broader markets to target.
 
 ### Power BI Dashboard Visualisation & Data Insights Interpretation

@@ -47,7 +47,7 @@ Overview of the steps taken to analyse the quality of the datasets and transform
 
 Steps:
 - Conducted a quality assessment of the datasets based on the Standard Data Quality Dimensions Framework (checked Accuracy, Completeness, Consistency, Currency, Relevancy, Validity and Uniqueness)
-- [Cleaned Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/cleaning%20data%20with%20SQL.sql): Data was transformed; inconsistent formats and categorical labels were fixed.
+- [Cleaned Data With SQL](https://github.com/CheilaDaSilva/Work_Experience_Projects/blob/main/KPMG%20Data%20Analytics%20Consulting%20Virtual%20Internship/1.%20cleaning%20data%20with%20SQL.sql): Data was transformed; inconsistent formats and categorical labels were fixed.
 - Recommended mitigation methods and implement it to create a training dataset for data exploration and model development.
 
 <table>

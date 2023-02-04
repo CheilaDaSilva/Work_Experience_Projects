@@ -105,7 +105,7 @@ Steps:
 
 Overview of the data exploration done to find the broader markets for the client to target, as well as the use of RFM analysis for the purpose of segmenting customers and finding the high value customers amongst the current customers dataset. 
 
-More details in the [Data Analytics Approach](https://docs.google.com/presentation/d/1y4rvjb6k0rYeO1hJ5ZMQndKSbti8TO3K/edit#slide=id.p15](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FCheilaDaSilva%2FWork_Experience_Projects%2Fmain%2FKPMG%2520Data%2520Analytics%2520Consulting%2520Virtual%2520Internship%2FData%2520Analytics%2520Approach.pptx&wdOrigin=BROWSELINK) presentation.
+More details in the [Data Analytics Approach](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FCheilaDaSilva%2FWork_Experience_Projects%2Fmain%2FKPMG%2520Data%2520Analytics%2520Consulting%2520Virtual%2520Internship%2FData%2520Analytics%2520Approach.pptx&wdOrigin=BROWSELINK) presentation.
 
 ## Data Exploration and Visualisation
 
@@ -150,7 +150,7 @@ Similarities between new and current customers distributions:
 - Most customers have property evaluations scores between 7 and 10.
 - Most customers are in their 40s (28% of total current customers and 21% of total new customers belong to this age group)
 
-#### Markets to Target
+### Broader Markets to Target (Recommendation)
 
 From initial data exploration of customer attributes and demographics, most of current customers with transaction history in 2017 tend to belong to the following markets:
 
